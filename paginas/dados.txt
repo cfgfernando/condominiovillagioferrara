@@ -1,0 +1,33 @@
+<?
+
+if($_SESSION['CD_MORADOR']){
+$sql1  = " SELECT *
+		    FROM morador
+		   WHERE cd_morador = ".$_SESSION['CD_MORADOR'];
+$res  = db_query($sql1);
+$nome = db_result($res,"nm_morador");
+$email = db_result($res,"email_morador");
+$photosmall= db_result($res1,"photosmall");
+
+} elseif($_SESSION['CD_FUNC']){
+$sql1  = " SELECT *
+		    FROM funcionario
+		   WHERE cd_func = ".$_SESSION['CD_FUNC'];
+$res1  = db_query($sql1);
+$nome = db_result($res1,"nm_func");
+$email = db_result($res1,"email_func");
+$photosmall= db_result($res1,"photosmall");
+
+}else{
+
+}
+?>
+
+<div class="switch has-switch">
+	<div class="switch-on switch-animate" style="">
+		<input type="checkbox" checked="" data-toggle="switch">
+			<span class="switch-left">ON</span>
+		<label>&nbsp;</label>
+			<span class="switch-right">OFF</span>
+	</div>
+</div>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="18a730fa-d60d-485c-b09e-24e237a7dc38" name="Condominio" url="http://ftp.condominiovillagioferrara.esy.es">
+        <fileTransfer host="ftp.condominiovillagioferrara.esy.es" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
